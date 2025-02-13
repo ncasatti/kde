@@ -8,44 +8,73 @@ menu(){
   clear
   echo "=== $TITLE ==="
   echo "1. KWin Rules"
-  echo "2. Shortcuts"
+  echo "2. Git Config"
+  echo "3. ZSH Config"
   echo "0. Exit"
 }
 
 sub_menu(){
   echo "=== $1 ==="
-  echo "1. Push"
-  echo "2. Pull"
+  echo "1. <-"
+  echo "2. ->"
 }
 
 kwin_rules(){
-  clear
-  while true; do
-    sub_menu "KWin Rules"
-    read -p "Select an option: " option
+  sub_menu "KWin Rules"
+  read -p "Select an option: " option
 
-    case $option in
-      1)
-        echo "Push"
-        ;;
-      2)
-        echo "Pull"
-        ;;
-      0)
-        echo "Exiting..."
-        return 0
-        ;;
-      *)
-        echo "Invalid option"
-        ;;
-    esac
-  done
+  case $option in
+    1)
+      echo "Push"
+      ;;
+    2)
+      echo "Pull"
+      ;;
+    *)
+      return 0
+      ;;
+  esac
+  read -p "Done..."
+}
+
+zsh_config(){
+  sub_menu "ZSH Config"
+  read -p "Select an option: " option
+
+  case $option in
+    1)
+      cp ~/.zshrc ./config/zshrc
+      ;;
+    2)
+      cp ./config/zshrc ~/.zshrc
+      ;;
+  esac
+  read -p "Done..."
+}
+
+git_config(){
+  sub_menu "Git Config"
+  read -p "Select an option: " option
+
+  case $option in
+    1)
+      cp ~/.gitconfig ./config/gitconfig
+      ;;
+    2)
+      cp ./config/gitconfig ~/.gitconfig
+      ;;
+    *)
+      return 0
+      ;;
+  esac
+  read -p "Done..."
 }
 
 shortcuts(){
   clear
   echo "Shortcuts"
 }
+
 main(){
   while true; do
       menu
@@ -53,16 +82,13 @@ main(){
 
       case $option in
           1)
-              echo "Has seleccionado la opción 1"
               kwin_rules
               ;;
           2)
-              echo "Has seleccionado la opción 2"
-              read -p "Presiona Enter para continuar..."
+              git_config
               ;;
           3)
-              echo "Has seleccionado la opción 3"
-              read -p "Presiona Enter para continuar..."
+              zsh_config
               ;;
           0)
               echo "Exiting..."

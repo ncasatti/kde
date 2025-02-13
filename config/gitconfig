@@ -1,0 +1,9 @@
+[user]
+	name = Nicolas Casatti
+	email = ncasatti@gmail.com
+[credentials]
+	helper = store
+[credential]
+	helper = store
+[core]
+	editor = nvim
