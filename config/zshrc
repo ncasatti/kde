@@ -46,6 +46,7 @@ alias docs='cd ~/Documents'
 alias sapps='cd /usr/share/applications'
 alias lapps='cd ~/.local/share/applications'
 alias zx='zoxide query --interactive'
+alias y='yazi'
 
 # Development directories
 alias dev='cd ~/Documents/Development'

@@ -2,7 +2,12 @@
 
 # Variables
 TITLE="KDE CONFIGURATOR"
+
 RULES_FILE="$HOME/.config/kwinrulesrc"
+
+ZSH_CONFIG="$HOME/.zshrc"
+ZSH_FOLDER="$HOME/.oh-my-zsh"
+ZSH_CUSTOM="$ZSH_FOLDER/custom"
 
 menu(){
   clear
@@ -43,10 +48,14 @@ zsh_config(){
 
   case $option in
     1)
-      cp ~/.zshrc ./config/zshrc
+      cp $ZSH_CONFIG ./config/zshrc
+      tar -caf ./data/plugins.tar.gz -C $ZSH_CUSTOM plugins
+      tar -caf ./data/themes.tar.gz -C $ZSH_CUSTOM themes
       ;;
     2)
-      cp ./config/zshrc ~/.zshrc
+      cp ./config/zshrc $ZSH_CONFIG
+      tar -xf ./data/plugins.tar.gz -C $ZSH_CUSTOM
+      tar -xf ./data/themes.tar.gz -C $ZSH_CUSTOM
       ;;
   esac
   read -p "Done..."
