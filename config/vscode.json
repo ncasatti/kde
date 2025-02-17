@@ -748,5 +748,6 @@
     "cursor.cpp.disabledLanguages": [
         "untitled"
     ],
-    "git.confirmSync": false
+    "git.confirmSync": false,
+    "workbench.panel.showLabels": false
 }

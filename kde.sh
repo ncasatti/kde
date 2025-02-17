@@ -22,19 +22,19 @@ sub_menu(){
 
 # 1. KWin Rules
 RULES_FILE="$HOME/.config/kwinrulesrc"
+SHORTCUTS_FILE="$HOME/.config/kglobalshortcutsrc"
 kwin_rules(){
   sub_menu "KWin Rules"
   read -p "Select an option: " option
 
   case $option in
     1)
-      echo "Push"
+      cp $RULES_FILE config/kwinrulesrc
+      cp $SHORTCUTS_FILE config/kglobalshortcutsrc
       ;;
     2)
-      echo "Pull"
-      ;;
-    *)
-      return 0
+      cp config/kwinrulesrc $RULES_FILE
+      cp config/kglobalshortcutsrc $SHORTCUTS_FILE
       ;;
   esac
   read -p "Done..."
@@ -84,7 +84,6 @@ zsh_config(){
 # 4. VS Code Config ---------------------------------------------------------------
 VS_CONFIG="$HOME/.config/Cursor/User/settings.json"
 VS_SHORTCUTS="$HOME/.config/Cursor/User/keybindings.json"
-
 cursor_config(){
   sub_menu "Cursor Config"
   read -p "Select an option: " option
