@@ -256,14 +256,6 @@
           "command": "-supermaven.addToChat"
      },
      {
-          "key": "ctrl+c",
-          "command": "-editor.action.clipboardCopyAction"
-     },
-     {
-          "key": "ctrl+c",
-          "command": "editor.action.clipboardCopyAction"
-     },
-     {
           "key": "ctrl+,",
           "command": "workbench.action.openSettingsJson"
      },
@@ -320,5 +312,13 @@
      {
           "key": "ctrl+n",
           "command": "explorer.newFile"
+     },
+     {
+          "key": "ctrl+c",
+          "command": "-editor.action.clipboardCopyAction"
+     },
+     {
+          "key": "ctrl+c",
+          "command": "editor.action.clipboardCopyAction"
      }
 ]

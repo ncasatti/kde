@@ -8,7 +8,7 @@
     "editor.fontVariations": true,
     "editor.formatOnSave": false,
     "editor.lineNumbers": "interval",
-    "editor.minimap.enabled": false,
+    "editor.minimap.enabled": true,
     "editor.renderWhitespace": "trailing",
     "editor.cursorStyle": "line-thin",
     // Editor Visual Behavior
@@ -44,9 +44,7 @@
     "workbench.iconTheme": "symbols",
     "workbench.activityBar.location": "bottom",
     "workbench.editor.showTabs": "none",
-    "workbench.editor.editorActionsLocation": "hidden",
-    "workbench.tree.indent": 10,
-    "workbench.tree.renderIndentGuides": "always",
+    "workbench.tree.indent": 15,
     "workbench.colorTheme": "Best Themes - Ayu Darkvenom",
     // Terminal Configuration
     "terminal.integrated.cursorStyle": "line",
@@ -749,5 +747,8 @@
         "untitled"
     ],
     "git.confirmSync": false,
-    "workbench.panel.showLabels": false
+    "workbench.panel.showLabels": false,
+    "workbench.editor.autoLockGroups": {
+        "terminalEditor": false
+    }
 }
