@@ -29,6 +29,7 @@ export PATH="$PATH:/home/ncasatti/.lmstudio/bin"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(git aliases archlinux branch github zsh-syntax-highlighting zsh-completions zsh-interactive-cd zsh-navigation-tools colored-man-pages)
 source $ZSH/oh-my-zsh.sh
+source <(fzf --zsh)
 
 # ====================
 # = DIRECTORY NAVIGATION
