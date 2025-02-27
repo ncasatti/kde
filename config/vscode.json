@@ -1,6 +1,6 @@
 {
     // Editor General Settings
-    "editor.fontFamily": "Cascadia Code",
+    "editor.fontFamily": "'Cascadia Code', 'JetBrainsMono Nerd Font', 'FiraCode Nerd Font', monospace",
     "editor.fontSize": 13.5,
     "editor.tabSize": 2,
     "editor.letterSpacing": 0.3,
@@ -48,7 +48,7 @@
     "workbench.colorTheme": "Best Themes - Ayu Darkvenom",
     // Terminal Configuration
     "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.fontFamily": "Cascadia Code",
+    "terminal.integrated.fontFamily": "'Cascadia Code', 'JetBrainsMono Nerd Font', 'FiraCode Nerd Font', monospace",
     "terminal.integrated.fontSize": 13.9,
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.letterSpacing": 1,
@@ -60,7 +60,7 @@
     "terminal.external.linuxExec": "konsole",
     "terminal.explorerKind": "external",
     // Debug Settings
-    "debug.console.fontFamily": "Cascadia Code",
+    "debug.console.fontFamily": "'Cascadia Code', 'JetBrainsMono Nerd Font', 'FiraCode Nerd Font', monospace",
     "debug.console.fontSize": 13.9,
     "debug.openDebug": "openOnDebugBreak",
     "debug.onTaskErrors": "abort",
@@ -748,7 +748,14 @@
     ],
     "git.confirmSync": false,
     "workbench.panel.showLabels": false,
+    "bookmarks.sideBar.expanded": true,
+    "workbench.quickOpen.preserveInput": true,
+    "workbench.reduceMotion": "off",
+    "workbench.activityBar.iconClickBehavior": "focus",
+    "workbench.tree.renderIndentGuides": "always",
     "workbench.editor.autoLockGroups": {
         "terminalEditor": false
-    }
+    },
+    "workbench.editor.editorActionsLocation": "hidden",
+    "editor.cursorSurroundingLinesStyle": "all"
 }
