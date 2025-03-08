@@ -57,7 +57,7 @@
     "terminal.integrated.gpuAcceleration": "on",
     "terminal.integrated.defaultProfile.linux": "zsh",
     "terminal.integrated.sendKeybindingsToShell": true,
-    "terminal.external.linuxExec": "konsole",
+    "terminal.external.linuxExec": "kitty",
     "terminal.explorerKind": "external",
     // Debug Settings
     "debug.console.fontFamily": "'Cascadia Code', 'JetBrainsMono Nerd Font', 'FiraCode Nerd Font', monospace",
@@ -744,7 +744,8 @@
         "alt+a"
     ],
     "cursor.cpp.disabledLanguages": [
-        "untitled"
+        "untitled",
+        "markdown"
     ],
     "git.confirmSync": false,
     "workbench.panel.showLabels": false,

@@ -278,7 +278,7 @@
           "command": "workbench.view.extension.aws-explorer"
      },
      {
-          "key": "ctrl+space t",
+          "key": "ctrl+space k",
           "command": "workbench.action.tasks.runTask"
      },
      {
@@ -320,5 +320,9 @@
      {
           "key": "ctrl+c",
           "command": "editor.action.clipboardCopyAction"
+     },
+     {
+          "key": "ctrl+space t",
+          "command": "workbench.action.terminal.openNativeConsole"
      }
 ]
